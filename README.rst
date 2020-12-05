@@ -5,7 +5,7 @@ Installation
 To start a new project with this template::
 
     django-admin.py startproject \
-      --template=https://github.com/caktus/django-project-template/archive/master.zip \
+      --template=https://github.com/2RockSoftware/archive/master.zip \
       --extension=py,rst,yaml,js \
       --name=Makefile,gulpfile.js,package.json,Procfile \
       <project_name>
