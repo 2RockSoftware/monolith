@@ -1,0 +1,4 @@
+.git
+deploy_*.sh
+excludes.txt
+.idea
