@@ -5,7 +5,7 @@ Installation
 To start a new project with this template::
 
     django-admin.py startproject \
-      --template=https://github.com/caktus/django-project-template/zipball/master \
+      --template=https://github.com/2RockSoftware/archive/master.zip \
       --extension=py,rst,yaml,js \
       --name=Makefile,gulpfile.js,package.json,Procfile \
       <project_name>
@@ -43,7 +43,7 @@ Next, create a virtual environment and install all of the requirements::
 Now, create a local settings file and set your DJANGO_SETTINGS_MODULE to use it:::
 
   cp {{ project_name }}/settings/local.example.py {{ project_name }}/settings/local.py
-  echo "DJANGO_SETTINGS_MODULE=settings.local" > .env
+  echo "DJANGO_SETTINGS_MODULE={{ project_name }}.settings.local" > .env
 
 Exit the virtualenv and reactivate it to activate the settings just changed::
 
