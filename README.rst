@@ -43,7 +43,7 @@ Next, create a virtual environment and install all of the requirements::
 Now, create a local settings file and set your DJANGO_SETTINGS_MODULE to use it:::
 
   cp {{ project_name }}/settings/local.example.py {{ project_name }}/settings/local.py
-  echo "DJANGO_SETTINGS_MODULE=settings.local" > .env
+  echo "DJANGO_SETTINGS_MODULE={{ project_name }}.settings.local" > .env
 
 Exit the virtualenv and reactivate it to activate the settings just changed::
 
